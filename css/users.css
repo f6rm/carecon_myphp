@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*--- ページ基本デザイン ---*/
+body{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.menu{
+  display:block;
+}
+
+.main{
+  width: 1000px;
+  height: 100%;
+  margin: 100px auto;
+  position: relative;
+}
+
+.user_menu{
+  display: block;
+  width: 150px;
+  text-align: right;
+  position: absolute;
+  top: 0;
+  right: 100;
+}
+
+.user_menu ul{
+  width: 150px;
+  color: black;
+  text-align: right;
+}
+
+.user_menu ul li {
+  width: 140px;
+  height: 20px;
+}
+
+.main .session_user{
+  margin: 30px 20px;
+}
+
+/* セッションからの遷移 */
+.attribute_change{
+  clear: both;
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.attribute_change .box{
+  display: block;
+  width: 150px;
+  height: 50px;
+  border: solid 2px #6091d3;/*線*/
+  border-radius: 20px;
+}
+
+.attribute_change .box a{
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+/* POSTページからの遷移 */
+.request{
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.request_user{
+  display: block;
+  width: 300px;
+  text-align: center;
+}
+
+.request .request_info{
+  display: block;
+  width: 150px;
+  height: 50px;
+  border: solid 2px #6091d3;/*線*/
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.request .request_info a{
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+
+
+.user_posts{
+  display: flex;
+  flex-flow: row wrap;
+  width: 1000px;
+  margin-top: 50px;
+  height: 500px;
+}
+
+.user_posts .post{
+  display: block;
+  width: 250px;
+  height: 250px;
+  margin-bottom: 30px;
+
+}
+
+.user_posts .post img{
+  width: 250px;
+  height: 250px;
+}

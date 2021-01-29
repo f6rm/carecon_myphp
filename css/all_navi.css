@@ -1,0 +1,113 @@
+@charset "UTF-8";
+/*--- ページ基本デザイン ---*/
+.menu{
+  height: 165px;
+  display: block;
+  /* position: fixed; */
+  top:0;
+}
+
+.header{
+  display: block;
+  margin: 0 auto;
+  height: 90px;
+  border-bottom: 1px solid #bfbfbf;
+}
+
+.header .logo{
+  display: block;
+  padding-left: 100px;
+  float: left;
+}
+
+.header .logo a{
+  display: block;
+}
+
+.header .navi_menu{
+  display: block;
+  width: auto;
+  float: right;
+  padding-right: 100px;
+}
+
+.header .navi_menu ul {
+  height: 50px;
+  padding-left: 0px;
+  margin-top: 40px;
+}
+
+.header .navi_menu ul li{
+  list-style-type: none;
+  float: left;
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+.header .navi_menu ul li a{
+  color: #666;
+  display: block;
+  text-decoration: none;
+}
+
+.category{
+  display: block;
+  width: 1000px;
+  margin:auto;
+  z-index: 100;
+}
+
+.dropdwn{
+    max-width: 1000px;
+    display: flex;
+    z-index: 100;
+}
+
+ul{
+    text-align: center;
+    list-style-type: none;
+    padding: 0;
+    color: #fff;
+}
+li{
+    max-width: calc(1200px/5);
+    position: relative;
+    padding: 5px;
+    margin-top: 0px;;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdwn>li{
+    width: 1200px;
+    margin: 1px;
+    background: #7ba5ff;
+    display: inline;
+}
+
+.dropdwn_menu{
+    width: 100%;
+    display: none;
+    position: absolute;
+    margin-left: -5px;
+    margin-top: 5px;
+    padding: 0;
+    background: rgb(75, 100, 209);
+}
+
+.dropdwn_menu li{
+    width: 100%;
+}
+
+.dropdwn_menu li a{
+    padding: 5px 0;
+    margin: -5px 5px -5px -5px;
+    display: block;
+    color: #fff;
+}
+
+li a:hover{
+    background: #b3d7ff;
+    color: rgb(65, 65, 65);
+    z-index: 100;
+}
